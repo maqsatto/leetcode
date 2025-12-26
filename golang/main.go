@@ -1,7 +1,17 @@
 package main
 
-import "github.com/maqsatto/leetcode/easy/leet26"
+import (
+	"fmt"
+)
 
 func main() {
-	leet26.RemoveDuplicates([]int{1, 1, 2})
+	nums := []int{0, 0, 1, 1, 1, 1, 2, 3, 3}
+	var check int = 2
+	for i := 2; i < len(nums); i++ {
+		if nums[i] != nums[check-2] {
+			nums[check] = nums[i]
+			check++
+		}
+	}
+	fmt.Println(nums)
 }
