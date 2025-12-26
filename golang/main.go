@@ -2,16 +2,10 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/maqsatto/leetcode/golang/quest/DSA/q1"
 )
 
 func main() {
-	nums := []int{0, 0, 1, 1, 1, 1, 2, 3, 3}
-	var check int = 2
-	for i := 2; i < len(nums); i++ {
-		if nums[i] != nums[check-2] {
-			nums[check] = nums[i]
-			check++
-		}
-	}
-	fmt.Println(nums)
+	fmt.Println(q1.GetConcatenation([]int{1, 2, 3, 4, 5}))
 }
