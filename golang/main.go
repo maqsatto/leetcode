@@ -3,10 +3,10 @@ package main
 import (
 	"fmt"
 
-	"github.com/maqsatto/leetcode/golang/easy/leet121_Best_Time_to_Buy_and_Sell_Stock_I"
+	leet122 "github.com/maqsatto/leetcode/golang/medium/leet122_Best_Time_to_Buy_and_Sell_Stock_II"
 )
 
 func main() {
-	nums := []int{7, 1, 5, 3, 6, 4}
-	fmt.Println(leet121.MaxProfit(nums))
+	nums := []int{1, 2, 3, 4, 5}
+	fmt.Println(leet122.MaxProfitInDay(nums))
 }
