@@ -416,3 +416,8 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+/.idea/.gitignore
+/.idea/go.imports.xml
+/.idea/leetcode.iml
+/.idea/modules.xml
+/.idea/vcs.xml
