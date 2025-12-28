@@ -1,11 +1,8 @@
-package main
+package leet69
 
-import (
-	"fmt"
-	"math"
-)
+import "math"
 
-func Sqrt(x int) int {
+func MySqrt(x int) int {
 	if x <= 0 {
 		return 0
 	}
@@ -18,11 +15,4 @@ func Sqrt(x int) int {
 		}
 	}
 	return int(z)
-}
-
-func main() {
-	num := 8
-	fmt.Println(Sqrt(num))
-	num2 := 2
-	fmt.Println(Sqrt(num2))
 }
